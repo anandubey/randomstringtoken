@@ -23,11 +23,11 @@ def check_string_length(str_len:int) -> int:
         str_len = DEFAULT_STR_LEN
     return str_len
 
-def generate_random_sample(token:str, str_len:int, type:str) -> str:
+def generate_random_sample(token:str, str_len:int) -> str:
     """
     Generates a random string sample from the token provided
     """
-    
+
     token_len = len(token)
     random_sample = ''
     if str_len > token_len:
